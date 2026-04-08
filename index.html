@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYC - Home</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+  }
+</style>
+</head>
+
+<body class="bg-slate-900 text-white">
+
+<div class="max-w-md mx-auto min-h-screen flex flex-col pb-24">
+
+  <!-- HEADER -->
+  <div class="flex justify-between items-center p-5">
+    <div>
+      <h1 class="text-xl font-bold">KYC</h1>
+      <p class="text-sm text-slate-400">Know Your Calories</p>
+    </div>
+    <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center">
+      👤
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="px-5 mb-4">
+    <input type="text" placeholder="Search food or restaurant..."
+    class="w-full p-3 rounded-xl bg-slate-800 text-white outline-none">
+  </div>
+
+  <!-- TITLE -->
+  <div class="px-5 mb-3 flex justify-between">
+    <p class="text-sm text-slate-400">Nearby Restaurants</p>
+    <p class="text-xs text-green-400">Rating ≥ 3.5</p>
+  </div>
+
+  <!-- RESTAURANTS -->
+  <div class="px-5 space-y-4">
+
+    <a href="restaurant.html" class="block card p-4 rounded-xl">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="font-semibold">Pista House</h2>
+          <p class="text-xs text-slate-400">Biryani • Indian</p>
+        </div>
+        <span class="text-green-400 text-sm">⭐ 4.2</span>
+      </div>
+    </a>
+
+    <a href="restaurant.html" class="block card p-4 rounded-xl">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="font-semibold">Healthy Hub</h2>
+          <p class="text-xs text-slate-400">Salads • Fitness</p>
+        </div>
+        <span class="text-green-400 text-sm">⭐ 4.6</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- RECENT -->
+  <div class="px-5 mt-6">
+    <h3 class="text-sm text-slate-400 mb-2">Recent</h3>
+    <div class="flex gap-3 overflow-x-auto">
+      <div class="bg-slate-800 px-4 py-2 rounded-xl text-sm">Chicken Biryani</div>
+      <div class="bg-slate-800 px-4 py-2 rounded-xl text-sm">Paneer Curry</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="fixed bottom-0 left-0 right-0 bg-slate-800 border-t border-slate-700 p-3 flex justify-around">
+
+  <a href="index.html" class="text-green-400 text-center">
+    🏠<div class="text-xs">Home</div>
+  </a>
+
+  <a href="restaurant.html" class="text-slate-400 text-center">
+    🔍<div class="text-xs">Search</div>
+  </a>
+
+  <a href="insights.html" class="text-slate-400 text-center">
+    📊<div class="text-xs">Insights</div>
+  </a>
+
+</div>
+
+</body>
+</html>
