@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Basic Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #foodList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .food-card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .food-card:hover {
+      background: #334155;
+      transform: scale(1.02);
+    }
+
+    .food-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .category {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🍽️ Food Menu</h1>
+
+  <!-- ✅ IMPORTANT: This ID must match restaurant.js -->
+  <div id="foodList"></div>
+
+  <!-- ✅ ORDER IS VERY IMPORTANT -->
+
+  <!-- 1. Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <!-- 2. Your config (creates window.supabaseClient) -->
+  <script src="js/supabase.js"></script>
+
+  <!-- 3. Your logic -->
+  <script src="js/restaurant.js"></script>
+
+</body>
+</html>
